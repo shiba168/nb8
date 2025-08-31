@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NB8: Nepal's Premier Online Casino for Real Money Games & Exciting Bonuses</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #0a469c;
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 255, 255, 0.1));
+            padding: 40px 20px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #FFD700, #FFA500, #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+            max-width: 800px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+        }
+
+        .section h2 {
+            color: #FFD700;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .section h3 {
+            color: #FFA500;
+            font-size: 1.5rem;
+            margin: 25px 0 15px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .overview-table, .comparison-table, .bonus-table, .additional-bonus-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .overview-table th, .overview-table td,
+        .comparison-table th, .comparison-table td,
+        .bonus-table th, .bonus-table td,
+        .additional-bonus-table th, .additional-bonus-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .overview-table th, .comparison-table th, .bonus-table th, .additional-bonus-table th {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #0a469c;
+            font-weight: bold;
+            text-shadow: none;
+        }
+
+        .overview-table tr:nth-child(even), 
+        .comparison-table tr:nth-child(even),
+        .bonus-table tr:nth-child(even),
+        .additional-bonus-table tr:nth-child(even) {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(255, 165, 0, 0.1));
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+            transform: translateX(-100%);
+            transition: transform 0.6s ease;
+        }
+
+        .feature-card:hover::before {
+            transform: translateX(100%);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .game-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .game-card:hover {
+            border-color: #FFD700;
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .steps-list {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+
+        .steps-list li {
+            counter-increment: step-counter;
+            position: relative;
+            padding-left: 70px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-left: 2px solid rgba(255, 215, 0, 0.3);
+            margin-left: 30px;
+        }
+
+        .steps-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: -40px;
+            top: 0;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #0a469c;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .tips-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tips-list li {
+            background: rgba(255, 215, 0, 0.1);
+            border-left: 4px solid #FFD700;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 0 10px 10px 0;
+            transition: all 0.3s ease;
+        }
+
+        .tips-list li:hover {
+            background: rgba(255, 215, 0, 0.2);
+            transform: translateX(10px);
+        }
+
+        .faq-section {
+            margin-top: 40px;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .faq-question {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 165, 0, 0.2));
+            padding: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 165, 0, 0.3));
+        }
+
+        .faq-answer {
+            padding: 20px;
+            border-top: 1px solid rgba(255, 215, 0, 0.1);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #0a469c;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            margin: 20px 10px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(135deg, #FFA500, #FFD700);
+        }
+
+        .highlight {
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            margin-top: 50px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 30px 15px;
+                margin-bottom: 25px;
+            }
+            
+            .header h1 {
+                font-size: 1.8rem;
+                line-height: 1.3;
+                margin-bottom: 15px;
+            }
+            
+            .header p {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            
+            .section {
+                padding: 20px 15px;
+                margin-bottom: 20px;
+            }
+            
+            .section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+            
+            .section h3 {
+                font-size: 1.2rem;
+                margin: 20px 0 10px 0;
+            }
+            
+            .feature-grid, .games-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .feature-card, .game-card {
+                padding: 15px;
+            }
+            
+            /* Mobile-friendly tables */
+            .overview-table, .comparison-table, .bonus-table, .additional-bonus-table {
+                font-size: 0.9rem;
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+                scrollbar-width: thin;
+                scrollbar-color: #FFD700 transparent;
+            }
+            
+            .overview-table::-webkit-scrollbar,
+            .comparison-table::-webkit-scrollbar,
+            .bonus-table::-webkit-scrollbar,
+            .additional-bonus-table::-webkit-scrollbar {
+                height: 6px;
+            }
+            
+            .overview-table::-webkit-scrollbar-track,
+            .comparison-table::-webkit-scrollbar-track,
+            .bonus-table::-webkit-scrollbar-track,
+            .additional-bonus-table::-webkit-scrollbar-track {
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 3px;
+            }
+            
+            .overview-table::-webkit-scrollbar-thumb,
+            .comparison-table::-webkit-scrollbar-thumb,
+            .bonus-table::-webkit-scrollbar-thumb,
+            .additional-bonus-table::-webkit-scrollbar-thumb {
+                background: #FFD700;
+                border-radius: 3px;
+            }
+            
+            .overview-table th, .overview-table td,
+            .comparison-table th, .comparison-table td,
+            .bonus-table th, .bonus-table td,
+            .additional-bonus-table th, .additional-bonus-table td {
+                padding: 10px 8px;
+                min-width: 120px;
+            }
+            
+            /* Mobile steps list */
+            .steps-list li {
+                padding-left: 60px;
+                margin-left: 20px;
+                font-size: 0.95rem;
+                margin-bottom: 25px;
+            }
+            
+            .steps-list li::before {
+                left: -35px;
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+            
+            /* Mobile tips list */
+            .tips-list li {
+                padding: 12px 15px;
+                font-size: 0.95rem;
+                margin-bottom: 12px;
+            }
+            
+            /* Mobile CTA buttons */
+            .cta-button {
+                display: block;
+                width: 90%;
+                margin: 15px auto;
+                padding: 12px 20px;
+                font-size: 1rem;
+                text-align: center;
+            }
+            
+            /* Mobile FAQ */
+            .faq-question {
+                padding: 15px;
+                font-size: 1rem;
+                line-height: 1.4;
+            }
+            
+            .faq-answer {
+                padding: 15px;
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+            
+            .footer {
+                padding: 30px 15px;
+                font-size: 0.95rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .header p {
+                font-size: 0.9rem;
+            }
+            
+            .section h2 {
+                font-size: 1.3rem;
+            }
+            
+            .cta-button {
+                width: 95%;
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+            
+            /* Stack table rows vertically on very small screens */
+            .overview-table, .comparison-table {
+                display: block;
+            }
+            
+            .overview-table tr, .comparison-table tr {
+                display: block;
+                border: 1px solid rgba(255, 215, 0, 0.3);
+                margin-bottom: 10px;
+                border-radius: 8px;
+                background: rgba(0, 0, 0, 0.2);
+            }
+            
+            .overview-table td, .comparison-table td {
+                display: block;
+                text-align: left;
+                padding: 8px 12px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            
+            .overview-table td:first-child,
+            .comparison-table td:first-child {
+                background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 165, 0, 0.3));
+                font-weight: bold;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+            
+            .overview-table td:last-child,
+            .comparison-table td:last-child {
+                border-bottom: none;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
+        }
+        
+        /* Touch-friendly interactions */
+        @media (hover: none) and (pointer: coarse) {
+            .feature-card:hover, .game-card:hover {
+                transform: none;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            }
+            
+            .cta-button:hover {
+                transform: none;
+            }
+            
+            .tips-list li:hover {
+                transform: none;
+            }
+            
+            .section:hover {
+                transform: none;
+            }
+        }
+
+        .loading-animation {
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header loading-animation">
+            <h1>NB8: Nepal's Premier Online Casino for Real Money Games & Exciting Bonuses</h1>
+            <p>When it comes to premium online gaming in Nepal's industry, it would be a major omission not to mention <span class="highlight">NB8 Casino</span>, where emotions soar with thousands of exciting game options and dream-worthy reward potentials. Join now to claim your first exclusive bonuses at NB8 Nepal!</p>
+            <div style="margin-top: 30px;">
+                <a href="#register" class="cta-button">Join Now</a>
+                <a href="#games" class="cta-button">Explore Games</a>
+            </div>
+        </div>
+
+        <!-- Overview Section -->
+        <div class="section loading-animation">
+            <h2>Overview of NB8 Nepal</h2>
+            <table class="overview-table">
+                <tr>
+                    <th>Features</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>License</td>
+                    <td>Curacao Gaming, PAGCOR</td>
+                </tr>
+                <tr>
+                    <td>Languages</td>
+                    <td>English, Nepali</td>
+                </tr>
+                <tr>
+                    <td>Type of Games</td>
+                    <td>Slots, Live Casino, Sports Betting, Cricket, Fishing Games, Instant Win</td>
+                </tr>
+                <tr>
+                    <td>Payment Methods</td>
+                    <td>Bank Transfer, e-Sewa, Cryptocurrency, Khalti</td>
+                </tr>
+                <tr>
+                    <td>Min. Deposit</td>
+                    <td>1000 RS</td>
+                </tr>
+                <tr>
+                    <td>Min. Withdrawal</td>
+                    <td>5000 RS</td>
+                </tr>
+                <tr>
+                    <td>Mobile App</td>
+                    <td>iOS, Android</td>
+                </tr>
+                <tr>
+                    <td>Help Centre</td>
+                    <td>24/7 Live Chat</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Key Features Section -->
+        <div class="section loading-animation">
+            <h2>Key Features of NB8 Nepal</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Extensive Game Library</h3>
+                    <p><span class="highlight">NB8 Online</span> boasts a diverse and extensive game library that includes a wide range of slots, live casino options, fishing games, and sports betting, catering to various player preferences.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Generous Welcome Bonuses</h3>
+                    <p>New players at <span class="highlight">NB8 Live</span> are greeted with generous welcome bonuses that enhance their initial gaming experience and provide extra funds to explore the platform.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Secure Payment Methods</h3>
+                    <p><span class="highlight">NB8 Casino</span> prioritizes player security by offering a variety of secure payment methods, including traditional bank transfers and modern digital payment options.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Mobile Compatibility</h3>
+                    <p>With a dedicated mobile app available for both Apple iOS and Android devices, NB8 Casino offers a fully optimized gaming experience on the go.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>24/7 Customer Support</h3>
+                    <p><span class="highlight">NB8 Casino</span> is committed to providing excellent customer service with 24/7 support available to assist players at any time.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>VIP Program</h3>
+                    <p>The <span class="highlight">NB8 VIP</span> Program offers exclusive benefits and rewards for loyal players in 10 levels, providing them with a premium gaming experience.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparison Section -->
+        <div class="section loading-animation">
+            <h2>How NB8 Stands Out in Nepal's Market</h2>
+            <table class="comparison-table">
+                <tr>
+                    <th>Features</th>
+                    <th>NB8</th>
+                    <th>1Win</th>
+                    <th>Megapari</th>
+                </tr>
+                <tr>
+                    <td>Number of Games</td>
+                    <td><span class="highlight">7,000+</span></td>
+                    <td>300+</td>
+                    <td>50+</td>
+                </tr>
+                <tr>
+                    <td>Welcome Bonus</td>
+                    <td>288%</td>
+                    <td><span class="highlight">500%</span></td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>License</td>
+                    <td>Curacao eGaming</td>
+                    <td>Curacao eGaming</td>
+                    <td>Curacao eGaming</td>
+                </tr>
+                <tr>
+                    <td>Customer Support</td>
+                    <td><span class="highlight">Multilingual 24/7 live chat, email, WhatsApp, Telegram</span></td>
+                    <td>Multilingual 24/7 live chat, email, phone, FAQ</td>
+                    <td>Email, Live Chat</td>
+                </tr>
+                <tr>
+                    <td>Withdrawal Speed</td>
+                    <td><span class="highlight">Instant</span></td>
+                    <td>Up to 24 hours</td>
+                    <td>A few minutes to 5 working days</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Registration Steps -->
+        <div class="section loading-animation" id="register">
+            <h2>How to Register on NB8</h2>
+            <p>Let's get started your betting journey at <span class="highlight">NB8 Nepal</span> by registering an account with the steps below:</p>
+            <ol class="steps-list">
+                <li>Visit the official NB8 site: Start by navigating to the official NB8 website to access the registration page.</li>
+                <li>Click the register button: Once on the homepage, locate and click the prominent "Sign Up" button to initiate the registration process.</li>
+                <li>Fill in your details: Complete the registration form by providing the required personal information, including username, password, and phone number.</li>
+                <li>Make your first deposit: After successfully registering, proceed to make your first deposit using one of the secure payment methods available.</li>
+                <li>Claim your welcome bonus: Finally, don't forget to claim your welcome bonus, which will enhance your initial gaming experience on the platform.</li>
+            </ol>
+        </div>
+
+        <!-- Games Section -->
+        <div class="section loading-animation" id="games">
+            <h2>NB8 Nepal Games</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <h3>Slots</h3>
+                    <p>At <span class="highlight">NB8 Online Casino Nepal</span>, slots offer an extensive variety of themes and gameplay styles, with features like free spins, bonus rounds, and progressive jackpots.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Live Casino</h3>
+                    <p>The <span class="highlight">NB8 Live Casino</span> experience immerses players in real-time gaming with professional dealers and high-definition streams.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Sports Betting</h3>
+                    <p><span class="highlight">NB8 sports</span> betting platform covers a wide range of sports, offering competitive odds for various events.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Cricket</h3>
+                    <p><span class="highlight">NB8 Cricket</span> Betting is tailored for passionate fans, featuring comprehensive coverage of domestic and international matches.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Instant Win</h3>
+                    <p><span class="highlight">Instant Win games</span> at NB8 Nepal deliver quick thrills with straightforward mechanics, perfect for fast-paced fun.</p>
+                </div>
+                <div class="game-card">
+                    <h3>Fishing Games</h3>
+                    <p><span class="highlight">NB8 Fishing</span> games combine skill and entertainment, inviting players to catch various fish for rewards.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bonuses Section -->
+        <div class="section loading-animation">
+            <h2>NB8 Bonuses & Promotions</h2>
+            <h3>Welcome Bonuses for New Users</h3>
+            <table class="bonus-table">
+                <tr>
+                    <th colspan="4">288% Welcome Jackpot Bonus</th>
+                </tr>
+                <tr>
+                    <th>Minimum deposit</th>
+                    <th>Turnover</th>
+                    <th>Max Bonus</th>
+                    <th>Eligible Games</th>
+                </tr>
+                <tr>
+                    <td>Rs. 1000</td>
+                    <td>x35</td>
+                    <td>Rs. 15,888</td>
+                    <td>Slot games</td>
+                </tr>
+            </table>
+            
+            <h3>Additional Bonuses for Existing Players</h3>
+            <table class="additional-bonus-table">
+                <tr>
+                    <th>Bonus</th>
+                    <th>Min. Deposit</th>
+                    <th>Turnover</th>
+                    <th>Max Bonus</th>
+                    <th>Eligible Games</th>
+                </tr>
+                <tr>
+                    <td>10% Daily First Deposit</td>
+                    <td>Rs. 3,500</td>
+                    <td>x20</td>
+                    <td>Rs. 58,888</td>
+                    <td>Cricket games</td>
+                </tr>
+                <tr>
+                    <td>15% Reload Bonus</td>
+                    <td>Rs. 1000</td>
+                    <td>x10</td>
+                    <td>Rs. 5,888</td>
+                    <td>Slot games</td>
+                </tr>
+                <tr>
+                    <td>3.2% Daily Rebate Bonus</td>
+                    <td>Not required</td>
+                    <td>Not required</td>
+                    <td>Unlimited</td>
+                    <td>All games</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Tips Section -->
+        <div class="section loading-animation">
+            <h2>Tips When Playing at NB8 Online Casino Nepal</h2>
+            <ul class="tips-list">
+                <li><strong>Start with Free Games:</strong> Beginning with free games allows players to familiarize themselves with the rules and mechanics without financial risk.</li>
+                <li><strong>Place Small Bets First:</strong> Starting with small bets minimizes risk while allowing players to explore different games.</li>
+                <li><strong>Discover High RTP Titles:</strong> High Return to Player (RTP) titles offer better odds of winning over time.</li>
+                <li><strong>Take Advantage of Bonuses:</strong> Utilizing available bonuses can enhance your gaming experience and extend your playtime.</li>
+            </ul>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="section loading-animation">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-section">
+                <div class="faq-item">
+                    <div class="faq-question">Is NB8 legal for online casino gaming in Nepal?</div>
+                    <div class="faq-answer">Yes, NB8 operates legally in Nepal, providing a regulated platform for online casino gaming.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Can I play NB8 with Nepali Rupees (NPR)?</div>
+                    <div class="faq-answer">Yes, NB8 supports transactions in Nepali Rupees (NPR) and many other currencies.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How fast are NB8 withdrawals?</div>
+                    <div class="faq-answer">Withdrawals at NB8 are processed quickly, allowing players to access their funds instantly.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Can I play NB8 on my mobile phone?</div>
+                    <div class="faq-answer">Yes, NB8 Mobile App is fully optimized for mobiles, available for both Android and iOS devices.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is responsible gambling supported on NB8?</div>
+                    <div class="faq-answer">Yes, NB8 is committed to promoting responsible gambling and offers tools and resources to help players manage their gaming habits.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do I register for NB8 Nepal?</div>
+                    <div class="faq-answer">To register for NB8 Nepal, simply visit the website, fill out the registration form, and follow the prompts to create your account.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer loading-animation">
+            <p>Experience Safe & Thrilling Online Casino Play with <span class="highlight">NB8 Nepal</span> in 2025</p>
+            <p style="margin-top: 20px; color: #ccc; font-size: 0.9rem;">
+                Please gamble responsibly. NB8 promotes responsible gaming and provides tools to help manage your gaming habits.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Add loading animation delay
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.loading-animation');
+            elements.forEach((el, index) => {
+                el.style.animationDelay = (index * 0.1) + 's';
+            });
+        });
+
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const isVisible = answer.style.display === 'block';
+                
+                // Hide all answers
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.style.display = 'none';
+                });
+                
+                // Show clicked answer if it wasn't visible
+                if (!isVisible) {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
